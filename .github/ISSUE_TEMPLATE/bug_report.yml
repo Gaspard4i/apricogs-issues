@@ -1,0 +1,30 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead. Screenshots are welcome.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Apricogs version
+      placeholder: 1.0.0-beta
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Minecraft, NeoForge, Create and Cobblemon versions
+      placeholder: 1.21.1, NeoForge 21.1.x, Create 6.0.x, Cobblemon 1.8.x
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log
+      description: Link or paste latest.log or the crash report (use a paste site for long logs).
